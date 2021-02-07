@@ -1,0 +1,17 @@
+<button
+  type="button"
+  class="btn btn-primary"
+  id="btnLike{{ id }}"
+  (click)="upLikes()"
+>
+  Like: <span id="likes{{ id }}">{{ getLikes() }}</span>
+</button>
+
+<button
+  type="button"
+  class="btn btn-secondary"
+  id="btnDislike{{ id }}"
+  (click)="upDislikes()"
+>
+  Dislike: <span id="dislikes{{ id }}">{{ getDislikes() }}</span>
+</button>
