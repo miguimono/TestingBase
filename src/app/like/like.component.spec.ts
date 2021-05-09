@@ -23,4 +23,19 @@ describe('LikeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it("Likes should have a 0 value", () => {
+    expect(component.getLikes()).toEqual(0);
+  });
+  it("Dislikes should have a 0 value", () => {
+    expect(component.getDislikes()).toEqual(0);
+  });
+  it("Likes should increment value", () => {
+    component.upLikes();
+    expect(component.getLikes()).toEqual(1);
+  });
+  it("Dislikes should increment value", () => {
+    component.upDislikes();
+    expect(component.getDislikes()).toEqual(1);
+  });
+
 });
